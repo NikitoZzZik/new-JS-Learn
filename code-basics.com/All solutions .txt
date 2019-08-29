@@ -1,0 +1,335 @@
+1.Привет, Мир!
+console.log('Hello, World!');
+
+2.Комментарии
+//You know nothing, Jon Snow!.
+
+3.Инструкции (Statements).
+console.log('Robert');
+console.log('Stannis');
+console.log('Renly');
+
+4.Как мы проверяем ваши решения
+console.log('9780262531962')
+
+5.Синтаксические ошибки
+console.log ('What Is Dead May Never Die');
+
+6.Арифметические операции
+console.log(81/9);
+
+7.Операторы
+console.log(6 - -81);
+
+8.Коммутативная операция
+console.log(3 ** 5);
+console.log(-8 / -4);
+
+9.Композиция операций
+console.log(8 / 2 + 5 - -3 / 2);
+
+10.Приоритет
+console.log(70 * (3 + 4) / (8 + 2));
+
+11.Числа с плавающей точкой
+console.log(0.39*0.22);
+
+12.Бесконечность (Infinity)
+console.log((Infinity+Infinity)/10);
+
+13.NaN
+console.log(NaN + 1);
+
+14.Линтер
+console.log((5**2) - (3 * 7));
+
+15.Кавычки
+console.log('\"Khal Drogo\'s favorite word is \"athjahakar\"\"');
+
+16.Экранирующие последовательности
+console.log('- Did Joffrey agree?\n- He did. He also said "I love using \\n".')
+
+17.Конкатенация
+console.log("Winter came for " + "the House of Frey.")
+
+18.Кодировка
+console.log(String.fromCharCode(126)); 
+console.log(String.fromCharCode(94));
+console.log(String.fromCharCode(37));
+
+19.Что такое переменная
+let motto = 'What Is Dead May Never Die!';
+console.log(motto);
+
+20.Изменение переменной
+name = 'anneirB';
+
+21.Выбор имени переменной
+let KingSistersAndBrathers = 2;
+console.log(KingSistersAndBrathers);
+
+22.Ошибки при работе с переменными
+const pet = 'Dragon';
+
+23.Выражения в определениях
+let dollars = euros * 1.25;
+console.log(dollars);
+let rub = dollars * 60;
+console.log(rub);
+
+24.Переменные и конкатенация
+console.log(greeting + ',' + " " + firstName + '!');
+console.log(intro + '\n' + info);
+
+25.Именование переменных
+let FirstNum = 11;
+let SecondNum = -100;
+console.log(FirstNum * SecondNum);
+
+26.Магические числа
+let hall = 6;
+let bedroom = 17;
+let rooms = hall*bedroom;
+console.log(king + ' has ' + rooms +' rooms.');
+
+27.Константы
+const army = 'the white walkers';
+console.log(army);
+
+28.Интерполяция
+console.log(`Do you want to eat, ${stark}?`);
+
+29.Извлечение символов из строки
+console.log(name[4]);
+
+30.Типы данных
+console.log(-0.304)
+
+31.undefined
+let name;
+console.log(name);
+
+32.Неизменяемость примитивных типов
+console.log(one[2] + two[1] + three[3] + two[4] + two [2]);
+
+33.Слабая типизация
+console.log("7" - (-8 - -2));
+
+34.Функции и их вызов
+const kilometrs = calculateDistance('Qarth','Vaes Dothrak');
+console.log(kilometrs);
+
+35.Математические функции JS
+Math.abs(soldiersCount);
+console.log(-soldiersCount);
+
+36.Сигнатура функции
+const round = Math.ceil(number);
+console.log(round);
+
+37.Аргументы по умолчанию
+const result = round(number,2);
+console.log(result);
+
+38.Функции с переменным числом параметров
+const min = Math.min(3, 10, 22, -3, 0 );
+console.log(min);
+
+39.Вызов функции — выражение
+const road = calculateDistance('Winterfell','The Twins') + calculateDistance('The Twins','The Eyrie');
+console.log (road);
+
+40.Аргументы как выражения
+console.log(calculateDistanceBetweenTowns(from + '-' + to));
+
+41.Вызов функций в аргументах функций
+const joffreyMom = getParentFor('Joffrey Baratheon');
+console.log(getParentFor(joffreyMom, 'father'));
+
+42.Детерминированность
+console.log(toUpperCase(text));
+
+43.Побочные эффекты
+const newtext = toLowerCase(reverse(text));
+console.log(newtext);
+
+44.Стандартная библиотека
+console.log (typeof motto);
+
+45.Свойства
+const len = text.length;
+console.log(len);
+
+46.Методы
+const tewtdown = text.toLowerCase();
+console.log(tewtdown);
+
+47.firstName = firstName.trim();
+console.log(firstName);
+
+48.Свойства и методы как выражения
+console.log(`First: ${text.charAt()}`);
+console.log(`Last: ${text.slice(-1)}`);
+
+49.Цепочка вызовов
+console.log(text.substring(5, 16).trim().length.toString());
+
+50.Создание (определение) функции
+const printMotto = () => {
+  const text = 'Winter is coming' ;
+  console.log(text);
+}
+
+51.Передача одного аргумента
+const printJaimesLine = (string) => {
+console.log (`JAIME: ${string}`);
+
+52.Передача нескольких аргументов
+const printSeq = (string, number) => {
+  console.log(string.repeat(number));
+}
+
+53.Возврат значений
+const getParentNamesTotalLength = (child) => {
+  const num = getParentFor(child, 'mother').length + getParentFor(child, 'father').length ;
+  return (num);
+}
+
+54.Возврат по умолчанию
+const doNothing = () => {};
+
+55.Параметры по умолчанию
+const getCustomParentFor = (childName, parent = 'father') => {
+return getParentFor(childName, parent);};
+
+56.Именование
+const getHiddenCard = (cardNumber, starCount = 4) => {
+cardNumber = cardNumber.toString();
+return '*'.repeat(starCount) + cardNumber.slice(-4);
+};
+
+57.Упрощенный синтаксис функций
+const capitalize = text => `${text[0].toUpperCase()}${text.slice(1)}`;
+
+58.Логический тип
+const isPensioner = (age) => age >= 60;
+
+59.Предикаты
+const isMister = (string) => string === 'Mister';
+
+60.Комбинирование операций и функций
+const hasTargaryenReference = text => text.substring(0, ('Targaryen'.length)) === 'Targaryen';
+
+61.Логические операторы
+const isLannisterSoldier = (armor, shield) => armor === "red" && shield === null || shield === 'lion';
+
+62.Отрицание
+const isNotLannisterSoldier = (armorColor, shield) => (shield !== 'lion' && shield !== null) || (armorColor !== 'red' && shield === null);
+
+63.Логические операторы 2
+const isNeutralSoldier = (color, sheat) => color !== 'red' && sheat === 'black';
+
+64.Условная конструкция
+const getSentenceTone = (tone) => {
+  if (tone === tone.toUpperCase()){
+    return 'scream' ;
+  }
+   return 'normal';
+}
+
+65.else
+const normalizeUrl = url => {
+if (url.startsWith('http://')) {
+url = url.substr(7);
+}
+return `https://${url}`;
+}
+
+66.else if
+const whoIsThisHouseToStarks = (houseName) => {
+  if (houseName === 'Karstark' || houseName === 'Tally') {
+    return 'friend';
+  } else if (houseName === 'Lannister' || houseName === 'Frey') {
+      return 'enemy';
+  }
+  return 'neutral';
+}
+
+67.Тернарный оператор
+const convertText = (text) =>  (text[0] === text[0].toUpperCase() ? text : reverse(text) );
+
+68.Слабая типизация
+const isFalsy = (string) => (string == false ? true : false);
+
+69.Цикл While
+let i = numberDown;
+while (i >= 1) {
+console.log(i);
+i = i - 1;
+} 
+console.log('finished!');
+
+70.Переворот строки
+const mysubstr = (str, num) => {
+let newStr = '';
+let index = 0;
+
+while (index < num) {
+const currentChar = str[index];
+newStr = `${newStr}${currentChar}`;
+index = index + 1;
+}
+return newStr;
+}
+
+71.Пограничные случаи
+const isArgumentsForSubstrCorrect = (str, index, strLength) => (str.length > 0) && (index > 0) && (index < str.length - 1) && (strLength + index < str.length);
+
+72.Синтаксический сахар
+const countChars = (str, char) =>{
+let i = 0;
+let result = 0;
+while (i < str.length - 1){
+if (str[i] === char) result++;
+i++;
+};
+return result; 
+}
+
+73.Циклы и условия
+const shouter = (text) => {
+let result = '';
+let index = 0;
+let countRepeat = 0;
+if (text.length > 5) countRepeat = 100;
+else if (text.length > 0 && text.length < 5) countRepeat = 1;
+else countRepeat = 10;
+
+while (index < countRepeat) {
+result = `${result}${text}`;
+index += 1;
+}
+return result;
+}
+
+74.Циклы и условия 2
+const getEvenNumbersUpTo = (num) => {
+let counter = 1;
+let result = '';
+while (counter <= num) {
+if (counter % 2 === 0) {
+result += counter;
+if (counter === num) {
+result += '.'
+return result;
+}
+result += ',';
+}
+counter += 1;
+}
+return result;
+};
+
+75.
+76.
+77.
