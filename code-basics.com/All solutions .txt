@@ -53,7 +53,7 @@ console.log('- Did Joffrey agree?\n- He did. He also said "I love using \\n".')
 console.log("Winter came for " + "the House of Frey.")
 
 18.Кодировка
-console.log(String.fromCharCode(126)); 
+console.log(String.fromCharCode(126));
 console.log(String.fromCharCode(94));
 console.log(String.fromCharCode(37));
 
@@ -266,7 +266,7 @@ let i = numberDown;
 while (i >= 1) {
 console.log(i);
 i = i - 1;
-} 
+}
 console.log('finished!');
 
 70.Переворот строки
@@ -293,7 +293,7 @@ while (i < str.length - 1){
 if (str[i] === char) result++;
 i++;
 };
-return result; 
+return result;
 }
 
 73.Циклы и условия
@@ -330,6 +330,40 @@ counter += 1;
 return result;
 };
 
-75.
-76.
-77.
+75. Циклы и условия 2
+const getEvenNumbersUpTo = (num) => {
+let result = '';
+let index = 1;
+while (index <= num) {
+if (index % 2 === 0) result = result + index +',';
+index++;
+}
+
+76.Инкремент и декремент
+const filterString = (str, char) => {
+  let index = 0;
+  let result = '';
+  while (index < str.length) {
+    const currentChar = str[index];
+    if (currentChar !== char) {
+      result = `${result}${currentChar}`;
+    }
+    index += 1;
+  }
+
+  return result;
+};
+
+77.Возврат из циклов
+const doesContain = (str, char) => {
+  let index = 0;
+  while (index < str.length) {
+    if (str[index] === char) {
+      return true;
+    }
+
+    index += 1;
+  }
+
+  return false;
+};
